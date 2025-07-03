@@ -1,0 +1,22 @@
+### 🧪 Test GET hello mock
+GET http://localhost:3000/mock/hello
+Accept: application/json
+
+###
+
+### 🔐 Login with admin
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "admin",
+  "password": "1@"
+}
+
+###
+
+### ⚽ Get all MatchPosts
+GET http://localhost:3000/posts
+Accept: application/json
+
