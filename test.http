@@ -1,9 +1,3 @@
-### 🧪 Test GET hello mock
-GET http://localhost:3000/mock/hello
-Accept: application/json
-
-###
-
 ### 🔐 Login with admin
 POST http://localhost:3000/auth/login
 Content-Type: application/json
@@ -15,8 +9,6 @@ Accept: application/json
 }
 
 ###
-
-### ⚽ Get all MatchPosts
-GET http://localhost:3000/posts
+GET http://localhost:3000/matchposts
 Accept: application/json
 
