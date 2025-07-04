@@ -1,4 +1,14 @@
-import { Controller } from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common';
+import { pitchList } from './mock-data';
 
-@Controller('pitch')
-export class PitchController {}
+@Controller('pitchs')
+export class PitchController {
+  @Get()
+  getAllPitch() {
+    return {
+      statusCode: 200,
+      message: 'Pitchs fetched successfully',
+      data: pitchList,
+    };
+  }
+}
