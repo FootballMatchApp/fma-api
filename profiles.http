@@ -1,0 +1,30 @@
+###
+GET http://localhost:3000/profile
+Accept: application/json
+###
+GET http://localhost:3000/profile/2
+Accept: application/json
+###
+POST http://localhost:3000/profile
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "New Player",
+  "email": "new.player@example.com",
+  "avatar": "https://i.pravatar.cc/150?u=5",
+  "phone": "555-123-4567", "age": 22, "position": "Striker",
+  "bio": "Eager to score goals."
+}
+###
+PUT http://localhost:3000/profile/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "age": 29,
+  "position": "Winger"
+}
+###
+DELETE http://localhost:3000/profile/4
+Accept: application/json
